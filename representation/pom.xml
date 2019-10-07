@@ -12,6 +12,25 @@
     <artifactId>representation</artifactId>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.thoughtworks</groupId>
+            <artifactId>api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thoughtworks</groupId>
+            <artifactId>application</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thoughtworks</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- dependency jar -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -23,11 +42,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <artifactId>ddd</artifactId>
-            <groupId>com.thoughtworks</groupId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
     </dependencies>
 
     <build>
