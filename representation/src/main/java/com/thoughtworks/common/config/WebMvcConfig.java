@@ -1,13 +1,13 @@
-package com.thoughtworks.config;
+package com.thoughtworks.common.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.thoughtworks.common.resolver.RequestParamArgumentResolver;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import javax.xml.validation.Validator;
+import javax.validation.Validator;
 import java.util.List;
-import java.util.Objects;
 
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {

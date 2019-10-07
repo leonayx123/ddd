@@ -1,4 +1,4 @@
-package com.thoughtworks.resolver;
+package com.thoughtworks.common.resolver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jdk.internal.joptsimple.internal.Strings;
@@ -72,4 +72,6 @@ public class RequestParamArgumentResolver implements HandlerMethodArgumentResolv
         }
         return model;
     }
+
+
 }

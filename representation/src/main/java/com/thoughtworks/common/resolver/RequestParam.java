@@ -1,4 +1,4 @@
-package com.thoughtworks.resolver;
+package com.thoughtworks.common.resolver;
 
 import java.lang.annotation.*;
 

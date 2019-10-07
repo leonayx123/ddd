@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
-    <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
       <entry name="!?*.form" />
@@ -14,10 +12,37 @@
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="config" />
+        <module name="representation" />
+        <module name="infrastructure" />
+        <module name="domain" />
+        <module name="application" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
+      <module name="application" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="ddd" target="1.8" />
+      <module name="domain" target="1.8" />
+      <module name="infrastructure" target="1.8" />
+      <module name="representation" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="application" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="ddd" options="" />
+      <module name="domain" options="-parameters" />
+      <module name="infrastructure" options="-parameters" />
+      <module name="representation" options="-parameters" />
+    </option>
   </component>
 </project>
-
