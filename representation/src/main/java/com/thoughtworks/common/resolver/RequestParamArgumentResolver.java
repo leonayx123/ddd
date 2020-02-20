@@ -1,7 +1,7 @@
 package com.thoughtworks.common.resolver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jdk.internal.joptsimple.internal.Strings;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.MethodParameter;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.support.WebDataBinderFactory;
@@ -53,7 +53,7 @@ public class RequestParamArgumentResolver implements HandlerMethodArgumentResolv
             Map<String, String> result = new LinkedHashMap(paramMap);
             for (Map.Entry<String, String[]> entry : paramMap.entrySet()) {
                 if (entry.getValue().length > 0) {
-                    result.put(entry.getKey(), Strings.join(entry.getValue(), ","));
+                    result.put(entry.getKey(), StringUtils.join(entry.getValue(), ","));
                 }
             }
 
